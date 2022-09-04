@@ -26,9 +26,20 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 Plug 'vim-airline/vim-airline'
 
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
+Plug 'ryanoasis/vim-devicons'
+
+Plug 'preservim/nerdtree' 
+
+Plug 'tribela/vim-transparent' 
+
 call plug#end()
 
 colorscheme onedark
 
 source ~/AppData/Local/nvim/coc.vim
 source ~/AppData/Local/nvim/telescope.vim
+source ~/AppData/Local/nvim/nerdtree.vim
